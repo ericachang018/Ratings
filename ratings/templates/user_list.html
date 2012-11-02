@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+
+	<h1> Welcome to Movie Ratings </h1>
+
+<a href="/login" id="login_link"> Log in </a>
+<br>
+<a href="/sign_up" id="signup_link"> Sign Up </a>
+
+{% for user in users %}
+<h2>User {{ user.id }}, age {{ user.age }} has {{(user.ratings)|length
+}} ratings</h2>
+{% endfor %}
+
+
+{% endblock %}

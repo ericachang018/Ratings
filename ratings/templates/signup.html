@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<form method = "POST" action="/authenticate">
+	<label > Email </label>
+	<input type="text" name="email">
+	<label > Password </label>
+	<input type="text" name="password">
+	<label > Age </label>
+	<input type="text" name="age">
+	<label > Zipcode </label>
+	<input type="text" name="zipcode">
+	<input type="submit" value="submit">
+</form>
+
+
+
+
+
+
+
+{% endblock %}
